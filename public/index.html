@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 6</title>
+    <link rel="stylesheet" href="/public/assets/css/style.css">
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset class="light_blue">
+                <legend class="light_blue">Votre identité</legend>
+                <label for="nom">1. Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom" required> <br>
+                <label for="prenom">2. Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required> <br>
+                <label for="mail">3. Adresse mail :</label>
+                <input type="email" id="mail" name="mail" placeholder="Adresse mail" required> 
+            </fieldset>
+
+            <fieldset class="blue">
+                <legend class="blue">Adresse de livraison</legend>
+                <label for="adresse">1. Adresse :</label>
+                <textarea rows="6" id="adresse" name="adresse" required ></textarea> <br>
+                <label for="zip">2. Code postal :</label>
+                <input type='number_format' inputmode="numeric" maxlength="5" id="zip" name="zip" maxlength="5" placeholder="Code postal" required><br>
+                <label for="ville">3. Ville :</label>
+                <input type="text" id="ville" name="ville" placeholder="Ville" required> 
+            </fieldset>
+
+            <fieldset class="navy_blue">
+                <legend class="navy_blue">Informations de réglement</legend>
+                <label for="card">1. Type de carte bancaire :</label> <br>
+
+                <div class="credit_cards">
+                    <input type="radio" name="paiement" id="VISA" required>
+                    <label for="visa" value="card" >VISA</label> <br>
+                    <input type="radio" name="paiement" id="mastercard">
+                    <label for="mastercard" value="card">Mastercard</label> <br>          
+                </div>
+
+                <label for="card_number">2. Numéro de carte :</label>
+                <input type='number_format' maxlength="16" id="card_number" name="card_number" placeholder="Numéro de carte" required> <br>
+                <label for="CVV_code">3. Code de sécurité :</label>
+                <input type='number_format' maxlength="3" id="CVV_code" name="CVV_code" placeholder="Code de sécurité" required> <br>                
+                <label for="titulaire_nom">4. Nom du titulaire :</label>
+                <input type="text" id="titulaire_nom" name="titulaire_nom" placeholder="Nom du titulaire" required> <br>                
+            </fieldset>
+            <button type="submit" value="send"> J'achète! </button>
+        </form>
+        
+    </main>
+</body>
+</html>

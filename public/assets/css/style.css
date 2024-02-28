@@ -1,0 +1,35 @@
+fieldset{
+    padding: 1%;
+    width: 50vw;
+}
+
+.light_blue{
+    background-color: #92DCE6;
+}
+
+.blue{
+    background-color: #427AA1;
+}
+
+.navy_blue{
+    background-color: #03678D;
+}
+
+input, textarea{
+    border: solid;
+    border-color: #699464;
+    border-radius: 5px;
+    background-color: #F5D2CC;
+}
+
+button{
+    background-color: #A6BE00;
+    border: solid;
+    border-color: #D74B32;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.credit_cards {
+    margin-left: 6%;
+}
